@@ -1,0 +1,6 @@
+tensorflow
+sentencepiece
+urllib3<2
+datasets 
+accelerate 
+torch tqdm
