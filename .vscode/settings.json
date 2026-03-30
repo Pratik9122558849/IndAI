@@ -1,3 +1,5 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "chat.subagents.allowInvocationsFromSubagents": true,
+    "github.copilot.chat.cli.forkSessions.enabled": true
 }

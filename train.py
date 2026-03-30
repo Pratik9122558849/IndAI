@@ -21,11 +21,12 @@ torch.set_float32_matmul_precision("high")
 ########################################
 
 MODEL_NAME = "gpt2-large"
-DATASET_FILE = "indai_dataset.jsonl"
+DATASET_FILE = "dataset/indai_dataset.jsonl"
+#DATASET_FILE = "dataset/gk_dataset.jsonl"
 OUTPUT_DIR = "./gpt2_large_lora"
 
-MAX_LEN = 64
-BATCH_SIZE = 1
+MAX_LEN = 32
+BATCH_SIZE = 4
 EPOCHS = 3
 
 ########################################
@@ -141,8 +142,8 @@ training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
     num_train_epochs=EPOCHS,
     per_device_train_batch_size=BATCH_SIZE,
-    gradient_accumulation_steps=8,
-    logging_steps=10,
+    gradient_accumulation_steps=2,
+    logging_steps=100,
     save_steps=200,
     learning_rate=2e-4,
     save_total_limit=2,

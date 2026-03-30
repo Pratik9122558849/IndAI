@@ -17,7 +17,7 @@ NUM_HEADS = 8
 FF_DIM = 512
 NUM_LAYERS = 4
 
-DATASET_FILE = "dataset.jsonl"
+DATASET_FILE = "dataset/indai_dataset.jsonl"
 TOKENIZER_PREFIX = "tokenizer"
 
 #############################################
